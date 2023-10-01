@@ -1,0 +1,110 @@
+
+
+let myName = "Dharmesh";
+console.log(myName.length)
+
+console.log(myName.toUpperCase())
+console.log(myName.toLowerCase())
+
+// Extracting String Parts
+
+// slice method use for string na perticular index thrwo delete charctaert delete 
+//slice(start, end)
+// substring(start, end)
+// substr(start, length)
+
+let data  = myName.substring(1, 4) ; 
+console.log("data :" + data) ; 
+
+let runner  = myName . substr(2, 5) ;
+let big  = myName.substr(1);
+console.log("runner :" + runner) ; 
+console.log(myName.slice(2, 4))
+
+console.log(myName.slice(2))
+
+
+
+//  3 methods for extracting string characters:
+
+// charAt(position)
+// charCodeAt(position)
+// Property access [ ]
+let num2 = "HELLO WORLD";
+let char = num2.charAt(0);
+let char2 = num2.charCodeAt(0);
+console.log(char);
+console.log("char");
+console.log("chatrcode  ")
+console.log(char2)
+
+
+
+///  replace method for use as string na chartecter will be chnaged 
+///The replace() method does not change the string it is called on.
+// replceALl() 
+
+// The replace() method returns a new string.
+
+console.log(myName.replace("Dk", "Ahir"))
+let text = "Please visit Microsoft!";
+let newText = text.replace(/MICROSOFT/i, "W3Schools");
+console.log(newText) ;
+let dome  = myName.replaceAll("Dharmesh","ramesh") ;
+console.log("dome + : " + dome) 
+
+
+/// concat method will be used for that scrreen ma added more string as added in my main string 
+let friend = "Naman"
+
+console.log(myName.concat(" is a friend of ", friend, " Ok"))
+
+
+/// trim method to use for space remove  in both side that means awhote spaces will be removed by useing trim method in javascr
+// trimStart() 
+
+let friend2 = "      Meena        "
+console.log(friend2)
+console.log(friend2.trimStart())
+console.log(friend2.trimEnd())
+console.log(friend2.trim())
+
+
+
+// padStart()  
+// padEnd()
+let numb = 5;
+let numberData = numb.toString();
+/// ifp dded is resilt of  0000000005 like that 
+let padded = numberData.padStart(10,"0");
+console.log("end padding ") 
+console.log(padded);
+
+let padded2 = numberData.padEnd(10,"0");
+console.log("pppading") 
+console.log(padded2); ///5000000000 that result ssas lentgh of data will be added in js 
+/// String interpolatioon 
+
+let fr = "Raman" + "Shivika" + "Harry"
+
+console.log(fr[0])
+console.log(fr[1])
+console.log(fr[2])
+console.log(fr[3])
+
+///  String is immutable string csn not be chnaged  
+// String is not be changed string for chnagd as substring not a main string will be changed  
+
+// fr[4]= "o" // This is not possible 
+
+
+console.log(fr)
+// QuickQuiz: Use a for loop to print a string
+
+
+
+// split method for using strign thtaisreturn as list 
+
+let txt = "Hello World!";
+let list  = txt.split(",");
+console.log(list)

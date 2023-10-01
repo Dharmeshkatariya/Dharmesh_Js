@@ -3,6 +3,11 @@
 let b = "Dharmesh";
 
 
+// let data  = ""; /// you csn not crtee variable as same name 
+// var data = "";
+/// 
+
+
 let myName  ;
 myName = "my name is dharmesh " ; 
 console.log(myName)
