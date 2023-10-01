@@ -1,0 +1,38 @@
+// setTimeout(function timer() {
+//   console.log('You clicked the button!');
+// }, 2000); 
+
+// console.log("Hi!");
+
+// setTimeout(function timeout() {
+//   console.log("Click the button!");
+// }, 5000);
+
+// console.log("Welcome to loupe.");
+
+
+
+
+// // while loop
+// let num = 10 ; 
+// // let num = prompt("Enter the value of n")
+// num = Number.parseInt(num)
+
+// let index = 0;
+// while(index<num){
+//   console.log(index)
+//   index++;
+// }
+
+// while loop
+// whene first time loop will exucute after that 
+//contion check at time you can use as do while 
+// let n = prompt("Enter the value of n")
+let n  = 50 ;
+n = Number.parseInt(n)
+
+let i = 10;
+do{
+  console.log(i)
+  i++;
+}while (i < n) 
