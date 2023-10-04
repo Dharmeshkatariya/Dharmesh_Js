@@ -14,16 +14,28 @@ console.log("indexof  : " ,index);
 
 
 let index2 = text.lastIndexOf("locate");
-console.log("lastIndexOf  : " ,index2);
+console.log("lastIndexOf  : " ,indexx2);
 
 
 //Both indexOf(), and lastIndexOf() return -1 if the text is not found:
 
 let index3 = text.indexOf("locate", 15);
+
+
+
+
+
+
+
+
+
+
+
 // start searching in 15 posititon 
 console.log(index3)
 
 let index4 = text.search("locate");
+
 console.log(index4)
 
 ///The two methods are NOT equal. These are the differences:
