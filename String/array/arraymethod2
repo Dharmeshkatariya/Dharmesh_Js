@@ -1,0 +1,128 @@
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let num_more = [11, 12, 13, 14, 15, 16, 17, 18, 19]
+let num_even_more = [211, 212, 213, 214, 415, 416, 417, 418, 419]
+
+console.log(num.length)
+
+
+var data  = delete num[0]
+// its retun of bool 
+console.log(data , " data ")
+console.log(num)
+
+// as you are use for delete that time length will be same not is decrsses as empty filed will be crted for that index particular index so keep in min d and also be thts woking 
+
+console.log(num.length)
+
+let newArray = num.concat(num_more, num_even_more)
+//  as mynewarray is insrte multiple array as mby using concet metho dfor array method
+
+console.log(newArray)
+
+// console.log(num, num_more)
+
+
+
+
+
+// sort method
+let compare = (a, b)=>{
+  return b - a
+}
+let num1 = [551, 22, 3, 14, 5, 6, 7, 8, 229]
+num.sort(compare)
+num.reverse()
+console.log(num1)
+
+
+
+// Splice and Slice
+let num3 = [551, 22, 3, 14, 5, 6, 7, 8, 229]
+
+
+// splice it use for partuclsrindex throw addded more index through data will be insert so thats use 
+
+
+let deletedValues = num3.splice(2, 4, 1021, 1022, 1023, 1024, 1025)
+console.log(num3)
+console.log(deletedValues)
+
+// let newNum = num.slice(3)
+// if you are use as slice method that is array conisder for lsice for thta index and also be ued for 
+let newNum = num3.slice(3, 5)
+console.log(newNum)
+
+
+// Finding Max and Min Values in an Array
+const points = [40, 100, 1, 5, 25, 10];
+// assending order
+points.sort(function(a, b){return a - b});
+// desending order
+
+
+points.sort(function(a, b){return b - a});
+
+//const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(){return 0.5 - Math.random()});
+
+for (let i = points.length -1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i+1));
+    let k = points[i];
+    points[i] = points[j];
+    points[j] = k;
+  }
+
+  ///Find the Lowest (or Highest) Array Valu
+//   const points = [40, 100, 1, 5, 25, 10];
+// points.sort(function(a, b){return a - b});
+// // now points[0] contains the lowest value
+// // and points[points.length-1] contains the highest value
+/// min value 
+function myArrayMin(arr) {
+    return Math.min.apply(null, arr);
+  }
+
+  /// max value
+  function myArrayMax(arr) {
+    return Math.max.apply(null, arr);
+  }
+
+  function myArrayMax(arr) {
+    let len = arr.length;
+    let max = -Infinity;
+    while (len--) {
+      if (arr[len] > max) {
+        max = arr[len];
+      }
+    }
+    return max;
+  }
+
+
+  function myArrayMin(arr) {
+    let len = arr.length;
+    let min = Infinity;
+    while (len--) {
+      if (arr[len] < min) {
+        min = arr[len];
+      }
+    }
+    return min;
+  }
+
+
+  const cars = [
+    {type:"Volvo", year:2016},
+    {type:"Saab", year:2001},
+    {type:"BMW", year:2010}
+  ];
+  cars.sort(function(a, b){return a.year - b.year});
+
+
+  cars.sort(function(a, b){
+    let x = a.type.toLowerCase();
+    let y = b.type.toLowerCase();
+    if (x < y) {return -1;}
+    if (x > y) {return 1;}
+    return 0;
+  });

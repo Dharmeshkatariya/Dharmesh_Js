@@ -1,0 +1,124 @@
+
+//he map() method creates a new array by performing a function on each array element.
+
+// The map() method does not execute the function for array elements without values.
+
+// The map() method does not change the original array.
+
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+
+//The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+
+// The reduce() method works from left-to-right in the array. See also reduceRight().
+
+// The reduce() method does not reduce the original array.
+
+let sum = numbers.reduce(myFunction);
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+
+
+
+//JavaScript Array reduceRight()
+// The reduceRight() method runs a function on each array element to produce (reduce it to) a single value.
+
+// The reduceRight() works from right-to-left in the array. See also reduce().
+
+// The reduceRight() method does not reduce the original array.
+// Note that the function takes 4 arguments:
+
+// The total (the initial value / previously returned value)
+// The item value
+// The item index
+// The array itself
+let sum1 = numbers.reduceRight(myFunction);
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+let arr = [45, 23, 21]
+// Array map method
+let a = arr.map((value, index, array) => {
+  console.log(value, index, array)
+  return value + index
+})
+console.log(arr)
+
+// Array filter method
+let arr2 = [45, 23, 21, 0, 3, 5]
+let a2 = arr2.filter((a) => {
+  return a < 10
+})
+console.log(a2, arr2)
+
+// Array reduce method
+let arr3 = [1, 2, 3, 5, 2, 1]
+const reduce_func = (h1, h2) => {
+  return h1 + h2
+}
+let newarr3 = arr3.reduce(reduce_func)
+console.log(newarr3)
+
+
+
+
+///JavaScript Array every()
+// The every() method checks if all array values pass a test.
+///Note that the function takes 3 arguments:
+
+// The item value
+// The item index
+// The array itself
+// This example checks if all array values are larger than 18:
+const numbe= [45, 4, 9, 16, 25];
+let allOver18 = numbers.every(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+///JavaScript Array some()
+// The some() method checks if some array values pass a test.
+
+// This example checks if some array values are larger than 18:
+///Note that the function takes 3 arguments:
+
+// The item value
+// The item index
+// The array itself
+
+const numb = [45, 4, 9, 16, 25];
+let someOver18 = numbers.some(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+
+///avaScript Array find()
+// The find() method returns the value of the first array element that passes a test function.
+
+// This example finds (returns the value of) the first element that is larger than 18:
+const num = [4, 9, 16, 25, 29];
+let first = num.find(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}

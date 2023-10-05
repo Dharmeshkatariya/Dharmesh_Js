@@ -1,0 +1,102 @@
+// Array Methods
+
+
+//
+// Array length
+// Array toString()
+// Array pop()
+// Array push()
+// Array shift()
+// Array unshift()
+// Array join()
+// Array delete()
+// Array concat()
+// Array flat()
+// Array splice()
+// Array slice()
+
+
+let num = [1, 2, 3, 34, 4]
+
+
+// all elemnt is convert as string and htat is string prorprtb for that perticular list as convert for a strnign 
+
+let b = num.toString() // b is now a string 
+
+
+console.log(b, typeof b)
+
+
+let c = num.join(" and ")
+
+console.log(c)
+
+console.log(typeof c, 'type of c like asa me as a my c ')
+
+console.log(c, typeof c)
+
+let s  = num.pop() 
+
+console.log(s)  //  its retun value is as pop element like a last elemt as 4  its value 4 will be retun 
+
+// let s1 = num.pop() // pop returns the popped element
+// console.log(num, s1)
+
+const fruitsddd = ["Banana", "Orange", "Apple", "Mango"];
+let length = fruitsddd.push("Kiwi");
+console.log(length)
+// The push() method adds a new element to an array (at the end):
+
+
+ let s1 = num.push(56) // push returns the new array length
+  console.log(num, s1)
+
+  // lst of elemnt as push for my that element and also be wrking  
+// he shift() method returns the value that was "shifted out":
+// let r = num.shift()
+// console.log(r, num) // Removes an element from the start of the array
+
+
+//The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements: 
+
+let r1 = num.unshift(78)  // addd element in from in first of array 
+console.log(r1, num)
+console.log(r1)
+
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+
+//Array elements can be deleted using the JavaScript operator delete.
+
+// Using delete leaves undefined holes in the array.
+
+// Use pop() or shift() instead.
+
+//const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// delete fruits[0];
+
+// merge two array 
+
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys);
+
+
+///Flattening an Array
+// Flattening an array is the process of red
+const myArr = [[1,2],[3,4],[5,6]];
+const newArr = myArr.flat();
+//The splice() method adds new items to an array.
+
+// The slice() method slices out a piece of an array.
+///The slice() method creates a new array.
+
+// The slice() method does not remove any elements from the source array.
+
+//
+const fruitda = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruitda.slice(3);

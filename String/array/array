@@ -1,0 +1,87 @@
+let marks_class_12 = [91, 82, 63, 84, false, "Not Present"]
+
+
+
+
+
+console.log(marks_class_12[0])
+console.log(marks_class_12[1])
+console.log(marks_class_12[6]) // Will be undefined because index 6 does not exist
+
+
+
+console.log("The length of marks_class_12 is", marks_class_12.length)
+
+
+marks_class_12[6] = 89 // Adding a new value to the array
+
+marks_class_12[0] = 96 // Changing the value of an array
+
+
+console.log(marks_class_12)
+console.log(typeof marks_class_12)
+
+//Access the Full Array
+// const cars = ["Saab", "Volvo", "BMW"];
+// document.getElementById("demo").innerHTML = cars;
+
+
+//Accessing the Last Array Element
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[fruits.length - 1];
+
+
+
+
+// Adding Array Elements 
+/// 
+const fruitsdata = ["Banana", "Orange", "Apple"];
+fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
+
+console.log(fruits)
+fruits[6] = "Lemon";  // Creates undefined "holes" in fruits
+console.log(fruits)
+
+// its cretd as holl for undeifeidn index that can be sued that time not be work pertfectly so that isusue for  
+
+
+
+
+// are called associative arrays (or hashes).
+
+// JavaScript does not support arrays with named indexes.
+
+// In JavaScript, arrays always use numbered indexes.
+const person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46;
+person.length;    // Will return 3
+person[0];        // Will return "John"
+
+
+
+///The Difference Between Arrays and Objects
+// In JavaScript, arrays use numbered indexes.  
+
+// In JavaScript, objects use named indexes.
+
+
+////When to Use Arrays. When to use Objects.
+// JavaScript does not support associative arrays.
+// You should use objects when you want the element names to be strings (text).
+// You should use arrays when you want the element names to be 
+
+// creted aa nw array for diifffrent method 
+const pointst = new Array(40, 100, 1, 5, 25, 10);
+const pointts = [40, 100, 1, 5, 25, 10];
+
+///The typeof operator returns object because a JavaScript array is an object.
+
+//  javascript array is  like as object so that is tyoepof object be remeenb r
+
+const fruitsData = ["Banana", "Orange", "Apple"];
+
+fruitsData instanceof Array;
+
+// its is value for as return as bool lik etruw or false if retun bojct then true otherwise flase retun

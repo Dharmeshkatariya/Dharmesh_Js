@@ -1,0 +1,62 @@
+let num = [3, 5, 1, 2, 4]
+
+for(let i=0; i<num.length;i++){
+  console.log(num[i])
+}
+
+// ForEach Loop
+num.forEach((element) => {
+  console.log(element * element)
+})
+
+// Array.from 
+let name = "Harry"
+let arr = Array.from(name)
+console.log(arr)
+
+// for...of 
+for (let item of num){
+  console.log(item)
+}
+
+// for...in
+for (let i in num){
+  console.log(num[i])
+}
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+console.log(text)
+
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+numbers.forEach(myFunction);
+
+function myFunction(value, index, array) {
+  txt += value + "<br>";
+}
+
+
+//ote that the function takes 3 arguments:
+
+// The item value
+// The item index
+// The array itself
+const numbersdata = [45, 4, 9, 16, 25];
+let txet = "";
+numbers.forEach(myFunction);
+
+function myFunction(value) {
+  txt += value + "<br>";
+}
